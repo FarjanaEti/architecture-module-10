@@ -7,4 +7,96 @@ font-optical-sizing: auto;
 font-weight: 400px;
  font-style: normal;
  }
-                            
+/* shared style */
+main{
+  max-width: 1440px;      
+  margin: 0 auto;                                 
+}
+main>section{
+   margin: 130px;                           
+}
+.flex{
+display: flex;                           
+}
+.dark-2{
+ color: #424242;                         
+}
+.dark-3{
+  color: rgb(114, 114, 114);                            
+}
+.bg-color{
+  background-color: rgba(255, 144, 14, 0.1);                            
+}
+/* header style */
+/* navbar style */
+.nav-item{
+  list-style: none;  
+  margin-right: 30px;                   
+}
+.nav-link{
+   text-decoration: none; 
+   font-weight: 500px;                      
+}
+.navbar{
+ justify-content: space-between;    
+ align-items: center;                       
+}
+.navbar, .banner{
+ max-width: 1440px;
+ margin: 0 auto;                             
+}
+.brand-title{
+  font-size: 3rem;
+  font-weight: bold;                            
+}
+/* banner section */
+.banner-content{
+     justify-content: center;
+     margin: 0 auto;
+     text-align: center;                         
+}
+.bnr-title{
+    font-size: 4rem;
+    font-weight: bold;                          
+}
+.btn-primary{
+ background: rgb(255, 144, 14); 
+ padding: 15px 22px;
+ font-size: 1.2rem;   
+ color: white;
+ border-radius: 5px;  
+ margin-bottom: 30px; 
+ margin-top: 20px;
+ border: none;                    
+}
+.banner img{
+   width: 100%;   
+   margin-bottom: 10px;                        
+}
+/* banner ens here */
+/* feature section start here */
+.teams{
+ align-items: center;                
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;                            
+}
+.feature-container{
+   padding: 50px;                           
+}
+.feature-title{
+    font-size: 2.8rem;
+    font-weight: 700px;                          
+}
+#quick{
+   color: rgb(255, 144, 14);                           
+}
+/* feature section ends here */
+/* responsive */
+@media screen and (max-width:576px) {
+  .navbar,.nav-link{
+     flex-direction: column;                         
+  }                         
+}
