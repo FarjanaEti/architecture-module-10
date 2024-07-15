@@ -74,7 +74,7 @@ display: flex;
    margin-bottom: 10px;                        
 }
 /* banner ens here */
-/* feature section start here */
+/* team feature section start here */
 .teams{
  align-items: center;                
 }
@@ -95,7 +95,45 @@ display: flex;
 #quick{
    color: rgb(255, 144, 14);                           
 }
-/* feature section ends here */
+/* team feature section ends here */
+/* feature section start here */
+#feature-title{
+  border-left: 5px solid rgb(255, 144, 14) ;
+  padding-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.features{
+ width: 1440px;
+height: 1059px;
+}
+.feature-card{
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+  padding: 30px;
+  margin-bottom: 10px;
+  width: 586px;
+height: 135px;
+border-radius: 8px;
+}
+.feature-card,.card-title{
+  font-size:1.25rem;
+  font-weight:600px;
+}
+.features img{
+width: 708px;
+height: 982px;
+}
+#Experience-badge{
+  padding: 40px 40px;
+  font-size: 1.5rem;
+  font-weight: 500px;
+  margin-left: -70px;
+  margin-top:-105px;
+}
+#Experience-year{
+  font-size: 4rem;
+  font-weight: 700px;
+}
 /* Fact card section start here */
 .facts-container{
   display: grid;
@@ -125,7 +163,24 @@ margin-top: 10px;
 .some-fact-descipt{
   width: 542px;
 }
-
+/* some facts section end here */
+/* sponsor seection start here */
+.sponsor-info{
+  width: 542px;
+  margin: 50px auto;
+  text-align: center;
+}
+.section-title{
+font-size: 2.8rem;
+font-weight: 700;
+}
+.sponsors-company{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+.sponsors-company img{
+  filter: grayscale(100%);
+}
 /* responsive header*/
 @media screen and (max-width:576px) {
   .navbar,.nav-link{
@@ -137,7 +192,10 @@ margin-top: 10px;
   .teams{
     flex-direction: column;
   }
-.team-img-container, .facts-container{
+.team-img-container, 
+.facts-container,
+.sponsors-company
+{
   grid-template-columns: repeat(1,1fr);
 }
 .feature-container{
@@ -145,6 +203,10 @@ margin-top: 10px;
 }
 .facts-container{
   justify-items: center;
+}
+.sponsors-company{
+  justify-items: center;
+  gap: 50px;
 }
 }
 /* responsive for medium device */
@@ -154,5 +216,10 @@ margin-top: 10px;
   }
   .feature-container{
     margin: 10px;
+  }
+  .sponsors-company, .facts-container{
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 20px;
   }
 }
